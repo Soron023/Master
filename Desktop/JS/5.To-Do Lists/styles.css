@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Odor+Mean+Chey&family=Poppins:wght@200;300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif, "Odor Mean Chey", serif;
+  margin: 0;
+  height: 90vh;
+  background: rgb(65, 73, 80);
+}
+
+.todo-list-container {
+  margin: 5rem auto;
+  width: 500px;
+  padding: 3rem 2rem;
+  border-radius: 25px;
+  background-color: rgb(172, 184, 192);
+}
+.todo-list-container > h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  color: rgb(20, 74, 120);
+}
+.input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding-left: 1rem;
+  border-radius: 10px;
+}
+.input-wrapper > input {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  font-size: 1.7rem;
+  height: 100%;
+  padding: 1rem 0;
+}
+
+.input-wrapper > button {
+  border: 0;
+  outline: 0;
+  border-radius: 10px;
+  font-size: 2.5rem;
+  width: 60px;
+  color: rgb(59, 94, 124);
+  cursor: pointer;
+}
+.list-container {
+  list-style: none;
+  margin-top: 1rem;
+}
+.list-container > li {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+  color: rgb(59, 94, 124);
+}
+
+.list-container > li > span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  border-radius: 50%;
+  height: 30px;
+  color: rgb(59, 94, 124);
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.list-container > li > span:hover {
+  background-color: rgba(255, 0, 0, 0.5);
+  color: rgb(255, 227, 227);
+}

@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Odor+Mean+Chey&family=Poppins:wght@200;300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif, "Odor Mean Chey", serif;
+  height: 100vh;
+  background-color: aliceblue;
+}
+.navigation {
+  background-color: rgb(47, 47, 47);
+}
+.nav-container {
+  margin: 0 auto;
+  max-width: 900px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo > img {
+  width: 150px;
+}
+.nav-lists {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-items > a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.7rem;
+}
+.toggle {
+  display: none;
+  color: white;
+  font-size: 1.7rem;
+}
+
+@media screen and (max-width: 900px) {
+  .nav-container {
+    flex-wrap: wrap;
+    padding: 0 1rem;
+  }
+  .toggle {
+    color: rgb(209, 209, 209);
+    display: inherit;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .toggle:hover {
+    color: white;
+  }
+  .nav-lists {
+    height: 0;
+    margin-left: 1rem;
+    overflow: hidden;
+    width: 100%;
+    opacity: 0;
+    flex-direction: column;
+    transition: all 0.3s ease-in-out;
+  }
+  .nav-lists.active {
+    margin-top: 1rem;
+    opacity: 1;
+    height: 350px;
+  }
+
+  .nav-items {
+    border-bottom: 1px solid rgb(66, 66, 66);
+  }
+  .nav-items > a {
+    font-size: 1.6rem;
+  }
+}
